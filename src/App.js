@@ -2,6 +2,7 @@ import { Component } from "react";
 // import Test from "../public/Test";
 import "./styles.css";
 import Testclass from "./testclass.js";
+import MyName from "./MyName.js";
 
 function add(a, b) {
   return a + b;
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <Testclass num="15" />
+      <MyName name="Changwook" />
     </>
   );
 }
