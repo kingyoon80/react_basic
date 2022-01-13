@@ -2,7 +2,7 @@ import { Component } from "react";
 // import Test from "../public/Test";
 import "./styles.css";
 import Testclass from "./testclass.js";
-import MyName from "./MyName.js";
+import MyName from "./myname.js";
 
 function add(a, b) {
   return a + b;
@@ -31,8 +31,10 @@ const num = 100;
 function App() {
   return (
     <>
-      <Testclass num="15" />
-      <MyName name="Changwook" />
+      <Testclass num="10" />
+      <MyName name="Kim" age="11">
+        이름없다니깐
+      </MyName>
     </>
   );
 }
