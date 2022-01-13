@@ -30,7 +30,7 @@ const num = 100;
 function App() {
   return (
     <>
-      <Testclass num="10" />
+      <Testclass num="15" />
     </>
   );
 }
