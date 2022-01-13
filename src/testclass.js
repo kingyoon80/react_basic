@@ -24,8 +24,11 @@ export default class Testclass extends Component {
   render() {
     return (
       <>
-        <h1> {func1()} </h1>
-        <h1> {func2()} </h1>
+        {console.log(this.props.num) ? (
+          <h1> {func1()} </h1>
+        ) : (
+          <h1> {func2()} </h1>
+        )}
       </>
     );
   }
