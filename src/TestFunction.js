@@ -1,3 +1,5 @@
+import { Component } from "react";
+
 function func1() {
   var a = "hong";
 
@@ -6,6 +8,8 @@ function func1() {
     console.log(a);
   }
   console.log(a);
+
+  return a;
 }
 
 function func2() {
@@ -16,16 +20,10 @@ function func2() {
     console.log(a);
   }
   console.log(a);
+
+  return a;
 }
 
 export default function TestFunction(props) {
-  return (
-    <>
-      {console.log(props.num % 2 === 0) ? (
-        <h1> {func1()} </h1>
-      ) : (
-        <h1> {func2()} </h1>
-      )}
-    </>
-  );
+  return <>{props.num % 2 === 0 ? <h1>Merong</h1> : <h1>Horong</h1>}</>;
 }

@@ -3,6 +3,7 @@ import { Component } from "react";
 import "./styles.css";
 import Testclass from "./testclass.js";
 import MyName from "./myname.js";
+import PropPropDouble from "./PropPropDouble.js";
 
 function add(a, b) {
   return a + b;
@@ -35,6 +36,7 @@ function App() {
       <MyName name="Kim" age="11">
         이름없다니깐
       </MyName>
+      <PropPropDouble num="10" />
     </>
   );
 }
