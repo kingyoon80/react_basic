@@ -4,6 +4,7 @@ import "./styles.css";
 import Testclass from "./testclass.js";
 import MyName from "./myname.js";
 import PropPropDouble from "./PropPropDouble.js";
+import Counter from "./Counter.js";
 
 function add(a, b) {
   return a + b;
@@ -29,14 +30,30 @@ const num = 100;
 //   );
 // }
 
+// function App() {
+//   return (
+//     <>
+//       <Testclass num="10" />
+//       <MyName name="Kim" age="11">
+//         이름없다니깐
+//       </MyName>
+//       <PropPropDouble num="10" />
+//     </>
+//   );
+// }
+
+// export default App;
+
 function App() {
   return (
     <>
-      <Testclass num="10" />
-      <MyName name="Kim" age="11">
-        이름없다니깐
-      </MyName>
-      <PropPropDouble num="10" />
+      <h1>
+        <Counter />
+      </h1>
+
+      <h1>
+        <Counter />
+      </h1>
     </>
   );
 }
